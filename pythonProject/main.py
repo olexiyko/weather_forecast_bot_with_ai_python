@@ -8,11 +8,11 @@ import openai
 from openai import OpenAI
 from weather_translation import weather_translations
 
-bot = telebot.TeleBot('6821604348:AAGOra9sGOqbi7PByMlFFCgCUZdKRGiQbAY')
-weather_api = 'c79c565f3bdb994fb2dbbff8b517ebed'
-IP_API = 'c27479254248f3'
-open_ai_api = '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'
-ip_address = '45.12.26.43'
+bot = telebot.TeleBot('your_telegram_bot_api')
+weather_api = 'your_openweather_api'
+IP_API = 'your_openweather_ip_api'
+open_ai_api = 'your_openai_api'
+ip_address = 'your_test_ip'
 client = OpenAI(api_key=open_ai_api)
 model = "gpt-3.5-turbo"
 

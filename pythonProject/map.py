@@ -2,7 +2,7 @@ import folium
 
 # Функція для додавання шару погоди на карту
 def add_weather_layer(map_obj, lat, lon):
-    api_key = 'c79c565f3bdb994fb2dbbff8b517ebed'
+    api_key = 'your_weather_api'
     url = f"https://tile.openweathermap.org/map/weather_new/{lat}/{lon}/10/10/{api_key}.png"
     layer = folium.TileLayer(url, attr='OpenWeatherMap', name='Weather')
     map_obj.add_child(layer)
